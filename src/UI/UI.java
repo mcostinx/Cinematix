@@ -35,7 +35,7 @@ public class UI
                 CardClientMenu();
                 break;
             case 0:
-                return;
+                System.exit(0);
             default:
                 System.out.println("Te rog sa introduci o optiune valida");
                 MainMenu();
