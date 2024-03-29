@@ -9,6 +9,7 @@ public class ClientCard
     private int CNP;
     private String birthDate;  //dd.mm.yyyy   -> sa facem o clasa pentru data
     private String registeredDate; //dd.mm.yyyy
+    private double loyaltyPoints;
 
     public ClientCard(long idCard, String firstName, String lastName, int CNP, String birthDate, String registeredDate) {
         this.idCard = id_static_cardclient;
@@ -18,10 +19,19 @@ public class ClientCard
         this.CNP = CNP;                //la adaugare, editare trebuuie sa verificam sa fie unic
         this.birthDate = birthDate;
         this.registeredDate = registeredDate;
+        this.loyaltyPoints = 0.0;
     }
 
     public String getFirstName() {
         return firstName;
+    }
+
+    public double getLoyaltyPoints() {
+        return loyaltyPoints;
+    }
+
+    public void setLoyaltyPoints(double loyaltyPoints) {
+        this.loyaltyPoints = loyaltyPoints;
     }
 
     public long getIdCard() {
