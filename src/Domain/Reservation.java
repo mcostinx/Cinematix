@@ -1,6 +1,6 @@
 package Domain;
 
-public class Rezervare
+public class Reservation
 {
     private static long id_static_rezervare;
     private long idRezervare;
@@ -8,7 +8,7 @@ public class Rezervare
     private long id_card_client;
     private String dataSiOra; //(dd.mm.yyyy HH:mm)
 
-    public Rezervare(long idRezervare, long idFilm, long id_card_client, String dataSiOra) {
+    public Reservation(long idRezervare, long idFilm, long id_card_client, String dataSiOra) {
         this.idRezervare = id_static_rezervare;
         id_static_rezervare = id_static_rezervare + 1;
         this.idFilm = idFilm;

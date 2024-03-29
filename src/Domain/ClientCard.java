@@ -1,6 +1,6 @@
 package Domain;
 
-public class CardClient
+public class ClientCard
 {
     private static long id_static_cardclient;
     private long idCard;
@@ -10,7 +10,7 @@ public class CardClient
     private String dataNasterii;  //dd.mm.yyyy   -> sa facem o clasa pentru data
     private String dataInregistrarii; //dd.mm.yyyy
 
-    public CardClient(long idCard, String nume, String prenume, int CNP, String dataNasterii, String dataInregistrarii) {
+    public ClientCard(long idCard, String nume, String prenume, int CNP, String dataNasterii, String dataInregistrarii) {
         this.idCard = id_static_cardclient;
         id_static_cardclient = id_static_cardclient + 1;   //nu stiu alta metoda simpla sa avem iduri unice
         this.nume = nume;

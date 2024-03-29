@@ -1,19 +1,17 @@
 package Repository;
 
-import Domain.CardClient;
+import Domain.ClientCard;
 import Domain.Film;
-import Domain.Rezervare;
+import Domain.Reservation;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class Repository
 {
    public ArrayList<Film> listaFilme;
-   private ArrayList<Rezervare> listaRezervari;
-   private ArrayList<CardClient> listaCarduri;
+   private ArrayList<Reservation> listaRezervari;
+   private ArrayList<ClientCard> listaCarduri;
 
     public Repository() {
         this.listaFilme = new ArrayList<>(100);
@@ -26,12 +24,12 @@ public class Repository
         this.listaFilme.add(film);
     }
 
-    private void addRezervare(Rezervare rezervare)
+    private void addRezervare(Reservation reservation)
     {
-        this.listaRezervari.add(rezervare);
+        this.listaRezervari.add(reservation);
     }
 
-    private void addCardClient(CardClient cardClient)
+    private void addCardClient(ClientCard cardClient)
     {
         this.listaCarduri.add(cardClient);
     }
@@ -40,11 +38,11 @@ public class Repository
         return listaFilme;
     }
 
-    public ArrayList<Rezervare> getListaRezervari() {
+    public ArrayList<Reservation> getListaRezervari() {
         return listaRezervari;
     }
 
-    public ArrayList<CardClient> getListaCarduri() {
+    public ArrayList<ClientCard> getListaCarduri() {
         return listaCarduri;
     }
 }
