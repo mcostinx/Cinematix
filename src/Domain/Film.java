@@ -59,4 +59,11 @@ public class Film
     public void setTicketPrice(double ticketPrice) {
         this.ticketPrice = ticketPrice;
     }
+
+    @Override
+    public String toString() {
+        return  "Id Film: "+ this.idFilm +"Titlu: " + this.movieTitle +"Anul lansarii:" + this.releaseYear + "Pret bilet: "+  this.ticketPrice;
+
+
+    }
 }

@@ -16,7 +16,7 @@ public class UI
         LinesDesign();
         System.out.println("Bine ai venit in Cinematrix!");
         System.out.println("1. Filme");
-        System.out.println("2. Domain.Rezervare");
+        System.out.println("2. Rezervare");
         System.out.println("3. Card Client");
         System.out.println(" ");
         System.out.println("0. Iesire");

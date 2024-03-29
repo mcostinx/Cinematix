@@ -19,8 +19,10 @@ public class Service
             System.out.println(repo.movieList);
         }
     }
-    public void addrezervare()
-    {}
-    public void addcard()
-    {}
+    public void addrezervare(){
+
+    }
+    public void addcard(){
+
+    }
 }
