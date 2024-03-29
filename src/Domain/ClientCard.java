@@ -7,17 +7,17 @@ public class ClientCard
     private String firstName;
     private String lastName;
     private int CNP;
-    private String dataNasterii;  //dd.mm.yyyy   -> sa facem o clasa pentru data
-    private String dataInregistrarii; //dd.mm.yyyy
+    private String birthDate;  //dd.mm.yyyy   -> sa facem o clasa pentru data
+    private String registeredDate; //dd.mm.yyyy
 
-    public ClientCard(long idCard, String firstName, String lastName, int CNP, String dataNasterii, String dataInregistrarii) {
+    public ClientCard(long idCard, String firstName, String lastName, int CNP, String birthDate, String registeredDate) {
         this.idCard = id_static_cardclient;
         id_static_cardclient = id_static_cardclient + 1;   //nu stiu alta metoda simpla sa avem iduri unice
         this.firstName = firstName;
         this.lastName = lastName;
         this.CNP = CNP;                //la adaugare, editare trebuuie sa verificam sa fie unic
-        this.dataNasterii = dataNasterii;
-        this.dataInregistrarii = dataInregistrarii;
+        this.birthDate = birthDate;
+        this.registeredDate = registeredDate;
     }
 
     public String getFirstName() {
@@ -48,19 +48,19 @@ public class ClientCard
         this.CNP = CNP;     //trebuie sa fie unic
     }
 
-    public String getDataNasterii() {
-        return dataNasterii;
+    public String getBirthDate() {
+        return birthDate;
     }
 
-    public void setDataNasterii(String dataNasterii) {
-        this.dataNasterii = dataNasterii;
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
     }
 
-    public String getDataInregistrarii() {
-        return dataInregistrarii;
+    public String getRegisteredDate() {
+        return registeredDate;
     }
 
-    public void setDataInregistrarii(String dataInregistrarii) {
-        this.dataInregistrarii = dataInregistrarii;
+    public void setRegisteredDate(String registeredDate) {
+        this.registeredDate = registeredDate;
     }
 }
