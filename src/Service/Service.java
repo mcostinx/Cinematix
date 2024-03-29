@@ -7,7 +7,7 @@ public class Service
 {
     Repository repo = new Repository();
 
-
+        /////TODO: for Aki please refactor these variables
 
     public void AddFilm(String titlu, int an, boolean inProgram, double pretBilet)
     {
@@ -16,7 +16,7 @@ public class Service
             Film filmDeAduagat = new Film(titlu, an, inProgram, pretBilet);
             repo.addFilm(filmDeAduagat);
             System.out.println("Film adaugat cu success!");
-            System.out.println(repo.listaFilme);
+            System.out.println(repo.movieList);
         }
     }
     public void addrezervare()

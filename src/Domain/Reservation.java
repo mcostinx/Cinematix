@@ -3,21 +3,21 @@ package Domain;
 public class Reservation
 {
     private static long id_static_rezervare;
-    private long idRezervare;
+    private long reservationId;
     private long idFilm;
     private long id_card_client;
-    private String dataSiOra; //(dd.mm.yyyy HH:mm)
+    private String airingDateTime; //(dd.mm.yyyy HH:mm)
 
-    public Reservation(long idRezervare, long idFilm, long id_card_client, String dataSiOra) {
-        this.idRezervare = id_static_rezervare;
+    public Reservation(long reservationId, long idFilm, long id_card_client, String airingDateTime) {
+        this.reservationId = id_static_rezervare;
         id_static_rezervare = id_static_rezervare + 1;
         this.idFilm = idFilm;
         this.id_card_client = id_card_client;
-        this.dataSiOra = dataSiOra;
+        this.airingDateTime = airingDateTime;
     }
 
-    public long getIdRezervare() {
-        return idRezervare;
+    public long getReservationId() {
+        return reservationId;
     }
 
     public long getIdFilm() {
@@ -36,11 +36,11 @@ public class Reservation
         this.id_card_client = id_card_client;
     }
 
-    public String getDataSiOra() {
-        return dataSiOra;
+    public String getAiringDateTime() {
+        return airingDateTime;
     }
 
-    public void setDataSiOra(String dataSiOra) {
-        this.dataSiOra = dataSiOra;
+    public void setAiringDateTime(String airingDateTime) {
+        this.airingDateTime = airingDateTime;
     }
 }

@@ -4,23 +4,23 @@ public class Film
 {
    private static long id_static_film;
     private long idFilm;
-    private String titlu;
-    private  int an;
+    private String movieTitle;
+    private  int releaseYear;
     private  boolean inProgram;
-    private  double pretBilet;
+    private  double ticketPrice;
 
-    public Film(String titlu, int an, boolean inProgram, double pretBilet) {
-        if(pretBilet<0)
+    public Film(String movieTitle, int releaseYear, boolean inProgram, double ticketPrice) {
+        if(ticketPrice <0)
         {
             System.out.println("Pretul biletului nu poate sa fie negativ");
             return;
         }
         this.idFilm = id_static_film;
         id_static_film = id_static_film +1;
-        this.titlu = titlu;
-        this.an = an;
+        this.movieTitle = movieTitle;
+        this.releaseYear = releaseYear;
         this.inProgram = inProgram;
-        this.pretBilet = pretBilet;
+        this.ticketPrice = ticketPrice;
     }
 
     public long getIdFilm() {
@@ -28,20 +28,20 @@ public class Film
     }
 
 
-    public String getTitlu() {
-        return titlu;
+    public String getMovieTitle() {
+        return movieTitle;
     }
 
-    public void setTitlu(String titlu) {
-        this.titlu = titlu;
+    public void setMovieTitle(String movieTitle) {
+        this.movieTitle = movieTitle;
     }
 
-    public int getAn() {
-        return an;
+    public int getReleaseYear() {
+        return releaseYear;
     }
 
-    public void setAn(int an) {
-        this.an = an;
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
     public boolean isInProgram() {
@@ -52,11 +52,11 @@ public class Film
         this.inProgram = inProgram;
     }
 
-    public double getPretBilet() {
-        return pretBilet;
+    public double getTicketPrice() {
+        return ticketPrice;
     }
 
-    public void setPretBilet(double pretBilet) {
-        this.pretBilet = pretBilet;
+    public void setTicketPrice(double ticketPrice) {
+        this.ticketPrice = ticketPrice;
     }
 }

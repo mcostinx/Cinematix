@@ -9,40 +9,40 @@ import java.util.ArrayList;
 
 public class Repository
 {
-   public ArrayList<Film> listaFilme;
-   private ArrayList<Reservation> listaRezervari;
-   private ArrayList<ClientCard> listaCarduri;
+   public ArrayList<Film> movieList;
+   private ArrayList<Reservation> reservationList;
+   private ArrayList<ClientCard> cardList;
 
     public Repository() {
-        this.listaFilme = new ArrayList<>(100);
-        this.listaRezervari = new ArrayList<>(100);
-        this.listaCarduri = new ArrayList<>(100);
+        this.movieList = new ArrayList<>(100);
+        this.reservationList = new ArrayList<>(100);
+        this.cardList = new ArrayList<>(100);
     }
 
     public void addFilm(Film film)
     {
-        this.listaFilme.add(film);
+        this.movieList.add(film);
     }
 
     private void addRezervare(Reservation reservation)
     {
-        this.listaRezervari.add(reservation);
+        this.reservationList.add(reservation);
     }
 
     private void addCardClient(ClientCard cardClient)
     {
-        this.listaCarduri.add(cardClient);
+        this.cardList.add(cardClient);
     }
 
-    public ArrayList<Film> getListaFilme() {
-        return listaFilme;
+    public ArrayList<Film> getMovieList() {
+        return movieList;
     }
 
-    public ArrayList<Reservation> getListaRezervari() {
-        return listaRezervari;
+    public ArrayList<Reservation> getReservationList() {
+        return reservationList;
     }
 
-    public ArrayList<ClientCard> getListaCarduri() {
-        return listaCarduri;
+    public ArrayList<ClientCard> getCardList() {
+        return cardList;
     }
 }
