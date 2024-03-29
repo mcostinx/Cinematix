@@ -7,11 +7,7 @@ import Domain.Reservation;
 import java.util.ArrayList;
 
 //bla bla bla
-<<<<<<< HEAD
-=======
-//789
 
->>>>>>> testing
 public class Repository
 {
    public ArrayList<Film> movieList;
