@@ -62,7 +62,7 @@ public class Film
 
     @Override
     public String toString() {
-        return  "Id Film: "+ this.idFilm +"Titlu: " + this.movieTitle +"Anul lansarii:" + this.releaseYear + "Pret bilet: "+  this.ticketPrice;
+        return  "Id Film: "+ this.idFilm +" Titlu: " + this.movieTitle +" Anul lansarii:" + this.releaseYear + " Pret bilet: "+  this.ticketPrice;
 
 
     }

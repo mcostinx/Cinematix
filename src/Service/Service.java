@@ -19,6 +19,17 @@ public class Service
             System.out.println(repo.movieList);
         }
     }
+    public void showMovies() {
+        if (!repo.movieList.isEmpty()) {
+            for (Film film : repo.movieList) {
+                System.out.println(film);
+            }
+        }
+            else {
+                System.out.println("Nu exista filme in lista!");
+            }
+
+    }
     public void addrezervare(){
 
     }

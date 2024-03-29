@@ -22,7 +22,7 @@ public class UI
         System.out.println("0. Iesire");
         System.out.println("Te rog sa introduci un numar pentru a alege optiunea");
         LinesDesign();
-        option = DataTypeValidation.readInt(0,3);
+        option = DataTypeValidation.readInt(0,5);
 
         switch (option){
             case 1:
@@ -52,12 +52,12 @@ public class UI
         System.out.println("2. Editeaza datele filmului");
         System.out.println("3. Cauta un film");
         System.out.println("4. Sterge un film ");
-        System.out.println("");
+        System.out.println("5. Afiseaza lista cu filme");
         System.out.println("0. Iesire");
         System.out.println("Te rog sa introduci un numar pentru a alege optiunea");
         System.out.println("");
         LinesDesign();
-        option = DataTypeValidation.readInt(0,4);
+        option = DataTypeValidation.readInt(0,5);
 
 
         switch (option){
@@ -73,6 +73,10 @@ public class UI
             case 4:
                 //DeleteFilm();
                 break;
+            case 5:
+              service.showMovies();
+              FilmMenu();
+              break;
             case 0:
                 MainMenu();
             default:
